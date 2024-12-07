@@ -54,20 +54,20 @@
 
         <label class="program__item">
           <input class="visually-hidden" type="radio" name="program" value="weight-loss" checked>
-          <span class="program__mark"></span>
-          <span class="program__label">Похудение</span>
+          <span class="main-form__mark"></span>
+          <span class="main-form__label">Похудение</span>
         </label>
 
         <label class="program__item">
           <input class="visually-hidden" type="radio" name="program" value="weight-gain">
-          <span class="program__mark"></span>
-          <span class="program__label">Набор массы</span>
+          <span class="main-form__mark"></span>
+          <span class="main-form__label">Набор массы</span>
         </label>
 
         <label class="program__item">
           <input class="visually-hidden" type="radio" name="program" value="need-advice">
-          <span class="program__mark"></span>
-          <span class="program__label">Не знаю (нужен ваш совет)</span>
+          <span class="main-form__mark"></span>
+          <span class="main-form__label">Не знаю (нужен ваш совет)</span>
         </label>
       </fieldset>
 
@@ -78,7 +78,7 @@
         <input class="owner-contacts__field field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
 
         <label class="owner-contacts__label label" for="phone">Телефон:*</label>
-        <input class="owner-contacts__field field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" pattern="[0-9]{3}-([0-9]{3})-[0-9]{2}-[0-9]{2}" required>
+        <input class="owner-contacts__field field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
       </fieldset>
 
       <fieldset class="main-form__fieldset comments">
@@ -90,7 +90,35 @@
 
       <fieldset class="main-form__fieldset additional">
         <legend class="main-form__heading">Дополнительно</legend>
+
+        <label class="additional__item">
+          <input class="visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
+          <span class="main-form__mark"></span>
+          <span class="main-form__label">Сахарозаменитель</span>
+        </label>
+
+        <label class="additional__item">
+          <input class="visually-hidden" type="checkbox" name="additional" value="water">
+          <span class="main-form__mark"></span>
+          <span class="main-form__label">Питьевая вода</span>
+        </label>
+
+        <label class="additional__item">
+          <input class="visually-hidden" type="checkbox" name="additional" value="milk">
+          <span class="main-form__mark"></span>
+          <span class="main-form__label">Молоко</span>
+        </label>
+
+        <label class="additional__item">
+          <input class="visually-hidden" type="checkbox" name="additional" value="vitamins">
+          <span class="main-form__mark"></span>
+          <span class="main-form__label">Витамины</span>
+        </label>
       </fieldset>
+
+      <button class="button" type="submit">Отправить заявку</button>
+
+      <p class="main-form__required-text">* — Обязательные поля</p>
     </form>
 
     <footer class="page-main__footer contacts">
