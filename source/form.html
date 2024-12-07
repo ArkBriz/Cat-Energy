@@ -48,7 +48,43 @@
         <label class="bio__label" for="age">Возраст (лет):</label>
         <input class="bio__field field" type="text" id="age" name="age" value="7">
       </fieldset>
+
+      <fieldset class="main-form__fieldset program">
+        <legend class="visually-hidden">Программа питания</legend>
+
+        <label class="program__item">
+          <input class="visually-hidden" type="radio" name="program" value="weight-loss" checked>
+          <span class="program__mark"></span>
+          <span class="program__label">Похудение</span>
+        </label>
+
+        <label class="program__item">
+          <input class="visually-hidden" type="radio" name="program" value="weight-gain">
+          <span class="program__mark"></span>
+          <span class="program__label">Набор массы</span>
+        </label>
+
+        <label class="program__item">
+          <input class="visually-hidden" type="radio" name="program" value="need-advice">
+          <span class="program__mark"></span>
+          <span class="program__label">Не знаю (нужен ваш совет)</span>
+        </label>
+      </fieldset>
     </form>
+
+    <footer class="page-main__footer contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+
+      <div class="contacts__wrap">
+        <p class="contacts__heading">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">
+          <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </address>
+      </div>
+
+      <img class="contacts__img" src="" width="" height="" alt="Местоположение нашего офиса на карте.">
+    </footer>
   </main>
 
   <footer class="page__footer page-footer">
