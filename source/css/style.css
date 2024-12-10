@@ -12,6 +12,19 @@
   src: url("/fonts/oswaldmedium.woff2") format("woff2"), url("/fonts/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
+.button {
+  display: inline-block;
+  padding: 6px;
+  border: none;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68B738;
+}
+
 .page-header {
   padding: 10px 20px 17px;
 }
