@@ -20,6 +20,12 @@
   font-style: normal;
   font-weight: 400;
   color: #000000;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  transform: scale(0);
 }
 
 *,
