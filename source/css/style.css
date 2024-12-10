@@ -20,13 +20,8 @@
   width: 100%;
 }
 
-.page {
-  background-color: lightgrey;
-}
-
 .page__body {
-  width: 320px;
-  margin: 0 auto;
+  margin: 0;
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -34,6 +29,36 @@
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+}
+
+.promo {
+  font-family: Oswald, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.promo__wrap {
+  height: 302px;
+  margin-bottom: 138px;
+  padding-top: 27px;
+  background-color: #7ec157;
+  background-image: url("../img/background/promo-bg-light.jpg");
+}
+
+.promo__heading {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .site-menu {

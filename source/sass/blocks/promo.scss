@@ -1,0 +1,33 @@
+.promo {
+  font-family: Oswald, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+}
+
+.promo__wrap {
+  height: 302px;
+  margin-bottom: 138px;
+  padding-top: 27px;
+
+  background-color: #7ec157;
+  background-image: url("../img/background/promo-bg-light.jpg");
+
+}
+
+.promo__heading {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+}
