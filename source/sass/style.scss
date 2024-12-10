@@ -25,3 +25,15 @@
 @import "blocks/site-menu.scss";
 @import "blocks/socials.scss";
 @import "blocks/visually-hidden.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
