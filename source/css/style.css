@@ -154,6 +154,17 @@
   margin-bottom: 20px;
 }
 
+.page-main__title {
+  margin: 0;
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-bottom: 41px;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
 .page-main__heading {
   margin: 0;
   margin-bottom: 40px;
@@ -193,6 +204,33 @@
 .process__item {
   margin-bottom: 20px;
   padding-left: 80px;
+}
+
+.product-card__name {
+  margin: 0;
+  font-family: Oswald, Arial, sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.product-card__info-list {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.products__item {
+  padding: 20px;
+  padding-bottom: 25px;
 }
 
 .promo {

@@ -1,0 +1,17 @@
+.product-card__name {
+  margin: 0;
+
+  font-family: Oswald, Arial, sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.product-card__info-list {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $special-dark-gray;
+}
