@@ -1,3 +1,11 @@
+.page-main__footer {
+  background-color: $white;
+
+  &--dark {
+    background-color: $basic-gray;
+  }
+}
+
 .page-main__title {
   margin: 0;
   margin-top: 27px;

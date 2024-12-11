@@ -69,7 +69,7 @@
 }
 
 .contacts__wrap {
-  margin: 26px 20px;
+  padding: 26px 20px;
 }
 
 .contacts__heading {
@@ -206,6 +206,13 @@
 
 .page-header__nav {
   width: 100%;
+}
+
+.page-main__footer {
+  background-color: #ffffff;
+}
+.page-main__footer--dark {
+  background-color: #f2f2f2;
 }
 
 .page-main__title {
