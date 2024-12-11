@@ -52,12 +52,24 @@
   color: #000000;
 }
 
+.catalog-sections {
+  padding: 0 20px;
+}
+
 .catalog-sections__block {
   padding: 21px 22px 18px;
 }
 
 .catalog-sections__block:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.example {
+  background-color: #f2f2f2;
+}
+
+.example__wrap {
+  padding: 25px 20px 40px;
 }
 
 .page-header {
@@ -73,7 +85,8 @@
 }
 
 .page-main__section {
-  margin: 0 20px 20px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .page-main__heading {
@@ -96,10 +109,15 @@
   background-color: #ffffff;
 }
 
+.process {
+  padding: 0 20px;
+}
+
 .process__list {
   margin: 0;
   padding: 0;
   padding-bottom: 9px;
+  color: #444444;
   list-style-type: none;
 }
 

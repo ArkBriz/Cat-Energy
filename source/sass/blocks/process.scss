@@ -1,7 +1,13 @@
+.process {
+  padding: 0 20px;
+}
+
 .process__list {
   margin: 0;
   padding: 0;
   padding-bottom: 9px;
+
+  color: $special-dark-gray;
   list-style-type: none;
 }
 
