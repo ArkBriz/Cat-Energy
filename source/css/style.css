@@ -53,7 +53,7 @@
 }
 
 .catalog-sections {
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .catalog-sections__block {
@@ -122,6 +122,69 @@
   text-transform: uppercase;
 }
 
+.extra-card__name {
+  margin: 0;
+  margin-bottom: 13px;
+  font-family: Oswald, Arial, sans-serif;
+  font-family: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.extra-card__list {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.extra-card__definition {
+  margin: 0;
+  line-height: 1;
+  color: #444444;
+}
+
+.extra-products__offer {
+  padding-top: 35px;
+}
+
+.extra-products {
+  padding: 25px 20px 35px;
+}
+
+.extra-products__title {
+  margin: 0;
+  margin-bottom: 36px;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.extra-products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.extra-products__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.offer {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.offer__text {
+  height: 289px;
+  margin: 0;
+  background-color: #68B738;
+  background-image: url("../img/background/offer-bg-mobile.jpg");
+}
+
 .page-footer {
   background-color: #f2f2f2;
 }
@@ -143,15 +206,6 @@
 
 .page-header__nav {
   width: 100%;
-}
-
-.page-main__header {
-  margin-bottom: 20px;
-}
-
-.page-main__section {
-  margin: 0;
-  margin-bottom: 20px;
 }
 
 .page-main__title {
@@ -190,7 +244,7 @@
 }
 
 .process {
-  padding: 0 20px;
+  padding: 0 20px 20px;
 }
 
 .process__list {

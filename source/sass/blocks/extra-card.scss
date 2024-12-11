@@ -1,0 +1,27 @@
+.extra-card__name {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-family: Oswald, Arial, sans-serif;
+  font-family: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.extra-card__list {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.extra-card__definition {
+  margin: 0;
+
+  line-height: 1;
+  color: $special-dark-gray;
+}
+
+.extra-products__offer {
+  padding-top: 35px;
+}
