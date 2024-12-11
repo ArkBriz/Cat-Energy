@@ -1,0 +1,29 @@
+.show-all {
+  text-align: center;
+}
+
+.show-all__name {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.show-all__text {
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-gray;
+}
+
+.show-all__button {
+  color: $special-dark-gray;
+  background-color: $basic-gray;
+}
