@@ -1,0 +1,43 @@
+.form {
+  padding-bottom: 32px;
+}
+
+.form__group {
+  padding: 0;
+  border: none;
+
+  &--personal {
+    padding: 20px 20px 24px;
+  }
+
+  &--program {
+    margin-bottom: 26px;
+    padding: 22px 20px 19px;
+  }
+
+  &--owner-contacts {
+    margin-bottom: 24px;
+    padding: 0 20px;
+  }
+
+  &--comments {
+    margin-bottom: 23px;
+    padding: 0 20px;
+  }
+
+  &--additional {
+    margin-bottom: 34px;
+    padding: 0 20px;
+  }
+}
+
+.form__button {
+  margin: 0 20px 21px;
+}
+
+.form__required-text {
+  margin: 0;
+
+  line-height: 16px;
+  text-align: center;
+}

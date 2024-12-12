@@ -172,6 +172,50 @@
   padding-bottom: 19px;
 }
 
+.field-group__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form {
+  padding-bottom: 32px;
+}
+
+.form__group {
+  padding: 0;
+  border: none;
+}
+.form__group--personal {
+  padding: 20px 20px 24px;
+}
+.form__group--program {
+  margin-bottom: 26px;
+  padding: 22px 20px 19px;
+}
+.form__group--owner-contacts {
+  margin-bottom: 24px;
+  padding: 0 20px;
+}
+.form__group--comments {
+  margin-bottom: 23px;
+  padding: 0 20px;
+}
+.form__group--additional {
+  margin-bottom: 34px;
+  padding: 0 20px;
+}
+
+.form__button {
+  margin: 0 20px 21px;
+}
+
+.form__required-text {
+  margin: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
 .offer {
   font-size: 16px;
   line-height: 20px;
@@ -208,9 +252,6 @@
   width: 100%;
 }
 
-.page-main__footer {
-  background-color: #ffffff;
-}
 .page-main__footer--dark {
   background-color: #f2f2f2;
 }
@@ -224,6 +265,12 @@
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
+}
+
+.page-main__subtitle {
+  margin: 0 20px 20px;
+  font-family: Oswald, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .page-main__heading {
