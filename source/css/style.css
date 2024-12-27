@@ -38,28 +38,6 @@
   margin: 0 auto;
   padding: 10px 20px 17px;
 }
-@media (max-width: 767px) {
-  .page-header__nav .page-header__wrap {
-    display: grid;
-    grid-template-columns: 1fr 34px;
-  }
-  .page-header__nav .page-header__logo {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-  }
-  .page-header__nav .logo__name {
-    justify-self: center;
-  }
-  .page-header__nav .page-header__toggle {
-    margin-left: 50%;
-  }
-  .page-header__nav .site-menu {
-    display: none;
-  }
-}
 @media (min-width: 768px) {
   .page-header__nav {
     display: flex;
@@ -67,9 +45,6 @@
     align-items: center;
     min-width: 708px;
     padding: 10px 30px 17px;
-  }
-  .page-header__nav .page-header__toggle {
-    display: none;
   }
 }
 @media (min-width: 1320px) {
@@ -79,7 +54,41 @@
   }
 }
 
+.page-header__wrap {
+  display: grid;
+  grid-template-columns: 1fr 34px;
+}
+
+.page-header__logo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.logo__name {
+  justify-self: center;
+}
+
+.page-header__toggle {
+  margin-left: 50%;
+}
+@media (min-width: 768px) {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-menu {
+    display: none;
+  }
+}
+
 .site-menu {
+  position: relative;
+  z-index: 2;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -93,6 +102,11 @@
 .site-menu__link {
   color: #000000;
   text-decoration: none;
+}
+@media (min-width: 1320px) {
+  .site-menu__link {
+    color: #ffffff;
+  }
 }
 
 .page-main__footer--dark {
@@ -126,19 +140,34 @@
 }
 
 .promo {
+  position: relative;
+  padding: 27px 20px 0;
   font-family: Oswald, Arial, sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+  background-image: url("../img/background/promo-bg-mobile.jpg"), linear-gradient(to bottom, #7ec157 60%, #ffffff 50%);
+  background-repeat: repeat-x;
+  background-position: top center;
 }
-
-.promo__wrap {
-  height: 302px;
-  margin-bottom: 138px;
-  padding-top: 27px;
-  background-color: #7ec157;
-  background-image: url("../img/background/promo-bg-light.jpg");
+@media (min-width: 768px) {
+  .promo {
+    margin-bottom: 505px;
+    padding: 62px 117px 0;
+    color: #000000;
+    text-align: left;
+    background-color: #ffffff;
+    background-image: none;
+    z-index: 1;
+  }
+}
+@media (min-width: 1320px) {
+  .promo {
+    width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 185px;
+  }
 }
 
 .promo__heading {
@@ -147,6 +176,12 @@
   font-weight: 400;
   font-size: 36px;
 }
+@media (min-width: 768px) {
+  .promo__heading {
+    margin-bottom: 41px;
+    font-size: 60px;
+  }
+}
 
 .promo__text {
   margin: 0;
@@ -154,10 +189,64 @@
   font-size: 14px;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .promo__text {
+    margin-bottom: 49px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1320px) {
+  .promo__text {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo__img {
+    position: absolute;
+    left: 270px;
+    bottom: -370px;
+    z-index: -1;
+    transform: scale(220%);
+  }
+}
+@media (min-width: 1320px) {
+  .promo__img {
+    top: 100px;
+    left: 600px;
+    transform: scale(185%);
+    z-index: 1;
+  }
+}
+
+.promo__button {
+  padding: 13px 25px;
+}
+@media (min-width: 768px) {
+  .promo__button {
+    width: 244px;
+    padding: 17px 25px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .promo::before {
+    display: block;
+    position: absolute;
+    right: -110px;
+    top: -154px;
+    z-index: -1;
+    width: 50%;
+    min-width: 720px;
+    min-height: 694px;
+    background-color: #7ec157;
+    background-image: url("../img/background/promo-bg-desktop.jpg");
+    content: "";
+  }
+}
 
 .button {
-  display: inline-block;
-  padding: 6px;
+  display: block;
   border: none;
   font-family: Oswald, Arial, sans-serif;
   font-size: 14px;
@@ -166,6 +255,11 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68B738;
+}
+@media (min-width: 768px) {
+  .button {
+    font-size: 20px;
+  }
 }
 
 .catalog-sections {

@@ -1,33 +1,103 @@
 .promo {
+  position: relative;
+  padding: 27px 20px 0;
+
   font-family: Oswald, Arial, sans-serif;
   line-height: 1;
   font-weight: 400;
   color: $white;
   text-align: center;
-}
 
-.promo__wrap {
-  height: 302px;
-  margin-bottom: 138px;
-  padding-top: 27px;
+  background-image: url("../img/background/promo-bg-mobile.jpg"),
+  linear-gradient(to bottom, #7ec157 60%, $white 50%);
+  background-repeat: repeat-x;
+  background-position: top center;
 
-  background-color: #7ec157;
-  background-image: url("../img/background/promo-bg-light.jpg");
+  @media (min-width: $tablet-width) {
+    margin-bottom: 505px;
+    padding: 62px 117px 0;
+    color: $black;
+    text-align: left;
+    background-color: $white;
+    background-image: none;
+    z-index: 1;
+  }
 
+  @media (min-width:$desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 185px;
+  }
 }
 
 .promo__heading {
   margin: 0;
   margin-bottom: 25px;
-
   font-weight: 400;
   font-size: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+    font-size: 60px;
+  }
 }
 
 .promo__text {
   margin: 0;
   margin-bottom: 29px;
-
   font-size: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 270px;
+    bottom: -370px;
+    z-index: -1;
+    transform: scale(220%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 100px;
+    left: 600px;
+    transform: scale(185%);
+    z-index: 1;
+  }
+}
+
+.promo__button {
+  padding: 13px 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 17px 25px;
+  }
+}
+
+.promo::before {
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    right: -110px;
+    top: -154px;
+    z-index: -1;
+
+    width: 50%;
+    min-width: 720px;
+    min-height: 694px;
+    background-color: #7ec157;
+    background-image: url("../img/background/promo-bg-desktop.jpg");
+    content: "";
+  }
+}
+
