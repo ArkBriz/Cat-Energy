@@ -1,5 +1,17 @@
 .catalog-block {
+  margin: 0 auto;
+  padding: 21px 22px 18px;
   background-color: $basic-gray;
+
+  @media (min-width: $tablet-width) {
+    max-width: 945px;
+    padding: 77px 264px 53px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 77px 52px 59px;
+  }
 }
 
 .catalog-block__heading {
@@ -11,17 +23,40 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    text-align: center;
+  }
 }
 
 .catalog-block__text {
   margin-bottom: 15px;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 54px;
+    margin-bottom: 48px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
 }
 
 .catalog-block__link {
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 24px;
   text-transform: uppercase;
   color: $black;
 }

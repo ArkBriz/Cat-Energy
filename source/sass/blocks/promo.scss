@@ -14,18 +14,15 @@
   background-position: top center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 505px;
     padding: 62px 117px 0;
     color: $black;
     text-align: left;
-    background-color: $white;
     background-image: none;
     z-index: 1;
   }
 
   @media (min-width:$desktop-width) {
     width: 1220px;
-    margin: 0 auto;
     padding-bottom: 185px;
   }
 }
@@ -63,41 +60,27 @@
     position: absolute;
     left: 270px;
     bottom: -370px;
-    z-index: -1;
     transform: scale(220%);
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     top: 100px;
     left: 600px;
     transform: scale(185%);
-    z-index: 1;
   }
 }
 
 .promo__button {
-  padding: 13px 25px;
+  @media (max-width: $mobile-width) {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 13px 25px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 244px;
     padding: 17px 25px;
-  }
-}
-
-.promo::before {
-  @media (min-width: $desktop-width) {
-    display: block;
-    position: absolute;
-    right: -110px;
-    top: -154px;
-    z-index: -1;
-
-    width: 50%;
-    min-width: 720px;
-    min-height: 694px;
-    background-color: #7ec157;
-    background-image: url("../img/background/promo-bg-desktop.jpg");
-    content: "";
   }
 }
 

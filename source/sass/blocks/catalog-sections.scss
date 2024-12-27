@@ -1,11 +1,24 @@
 .catalog-sections {
+  margin: 0 auto;
   padding: 20px;
-}
 
-.catalog-sections__block {
-  padding: 21px 22px 18px;
+  @media (max-width: $mobile-width) {
+    max-width: 540px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    width: 1220px;
+    padding: 82px 0 71px;
+  }
 }
 
 .catalog-sections__block:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
