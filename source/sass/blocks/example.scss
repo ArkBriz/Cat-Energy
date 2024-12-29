@@ -1,34 +1,155 @@
 .example {
-  padding: 25px 20px 40px;
+  @media (max-width: $mobile-width) {
+    padding: 25px 20px 40px;
+    background-color: $basic-gray;
+  }
 
-  background-color: $basic-gray;
+  @media (min-width: $tablet-width) {
+    padding: 43px 33px 40px;
+    background-image: linear-gradient(to top, #eaeaea 40%, $white 40%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 75px;
+    background-image: linear-gradient(to top, #eaeaea 70%, $white 60%);
+  }
+}
+
+.example__wrap {
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width) {
+    max-width: 500px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 940px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 436px 591px;
+    justify-content: space-between;
+    max-width: 1220px;
+  }
 }
 
 .example__text {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 83px;
+    margin-bottom: 69px;
+  }
+}
+
+.example__numbers-wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 850px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 3 / 5;
+    margin-bottom: 0;
+  }
 }
 
 .example__list {
   margin: 0;
-  margin-bottom: 20px;
+
+  @media (max-width: $mobile-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 124px);
+    justify-content: space-between;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 162px);
+    justify-content: space-between;
+    width: 366px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.example__item {
+  text-align: center;
 }
 
 .example__number {
   font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__desc {
   margin: 0;
-
   font-size: 12px;
   line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .example__cost {
+  margin: 0;
   font-family: Oswald, Arial, sans-serif;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+}
+
+.example__images {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    margin-bottom: 0;
+  }
+}
+
+.example__switcher {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
 }

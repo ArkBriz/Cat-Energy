@@ -8,6 +8,10 @@
   }
 }
 
+.page-main__process {
+  margin: 0 auto;
+}
+
 .page-main__footer {
   &--dark {
     background-color: $basic-gray;
@@ -46,5 +50,11 @@
     margin-bottom: 63px;
     font-size: 60px;
     line-height: 1;
+  }
+
+  &--example-height {
+    @media (min-width: $desktop-width) {
+      margin-top: 43px;;
+    }
   }
 }
