@@ -19,15 +19,19 @@
 }
 
 .page-main__title {
-  margin: 0;
-  margin-top: 27px;
-  margin-left: 20px;
-  margin-bottom: 41px;
+  margin: 27px 20px 41px;
 
   font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 65px 30px 155px;
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .page-main__subtitle {

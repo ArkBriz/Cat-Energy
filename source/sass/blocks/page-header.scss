@@ -30,6 +30,14 @@
       content: "";
     }
   }
+
+  &--bg-none {
+    @media (min-width: $desktop-width) {
+      &::before {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

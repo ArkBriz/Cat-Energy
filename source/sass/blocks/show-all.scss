@@ -1,5 +1,20 @@
 .show-all {
+  max-width: 460px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    min-width: 324px;
+    padding: 0 37px 39px 39px;
+    border: 2px solid $basic-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+  }
 }
 
 .show-all__name {
@@ -12,6 +27,14 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    margin-top: 161px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .show-all__text {
@@ -21,9 +44,23 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+    margin-bottom: 87px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .show-all__button {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
   color: $special-dark-gray;
   background-color: $basic-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

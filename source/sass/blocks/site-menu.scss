@@ -17,6 +17,10 @@
   text-decoration: none;
 
   @media (min-width: $desktop-width) {
-    color: $white;
+    color: $black;
+
+    &--index-color {
+      color: $white;
+    }
   }
 }
