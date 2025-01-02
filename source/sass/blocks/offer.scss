@@ -1,13 +1,33 @@
 .offer {
+  padding: 187px 61px 43px 58px;
+
   font-size: 16px;
   line-height: 20px;
   color: $white;
-}
-
-.offer__text {
-  height: 289px;
-  margin: 0;
 
   background-color: $basic-green;
   background-image: url("../img/background/offer-bg-mobile.jpg");
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.offer__text {
+  width: 161px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 184px 42px 42px;
+  }
 }
