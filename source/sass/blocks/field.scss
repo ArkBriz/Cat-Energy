@@ -1,3 +1,9 @@
+.field {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 13px;
+}
 
 .field__label,
 .field__input::placeholder {
@@ -5,6 +11,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $special-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .field__input {

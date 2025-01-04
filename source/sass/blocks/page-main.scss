@@ -34,11 +34,41 @@
   }
 }
 
+.page-main__form-title {
+  margin: 27px 20px 37px;
+
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 65px 70px 55px;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
+}
+
 .page-main__subtitle {
-  margin: 0 20px 20px;
+  margin: 0 20px 40px;
 
   font-family: Oswald, Arial, sans-serif;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 70px 65px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
 }
 
 .page-main__heading {
