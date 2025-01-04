@@ -43,7 +43,7 @@
 
       <form class="form__body" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form__wrap">
-          <fieldset class="form__group form__group-personal field-group">
+          <fieldset class="form__group form__group--personal field-group">
             <legend class="visually-hidden">Данные кота</legend>
 
             <ul class="field-group__list">
@@ -68,7 +68,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group form__group-program field-group">
+          <fieldset class="form__group form__group--program field-group">
             <legend class="visually-hidden">Программа питания</legend>
 
             <ul class="field-group__list">
@@ -97,7 +97,7 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__group form__group-owner-contacts field-group">
+        <fieldset class="form__group form__group--owner-contacts field-group">
           <legend class="field-group__heading">Контактные данные (владельца кота)</legend>
 
           <ul class="field-group__list">
@@ -116,13 +116,13 @@
           </ul>
         </fieldset>
 
-        <div class="form__group form__group-comments field-group">
+        <div class="form__group form__group--comments field-group">
           <label class="field-group__heading" for="comments">Комментарий</label>
 
           <textarea class="field__input" name="comments" id="comments" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
-        <fieldset class="form__group form__group-additional field-group">
+        <fieldset class="form__group form__group--additional field-group">
           <legend class="field-group__heading">Дополнительно</legend>
 
           <ul class="field-group__list">
@@ -157,9 +157,11 @@
           </ul>
         </fieldset>
 
-        <button class="form__button button" type="submit">Отправить заявку</button>
+        <div class="form__button-wrap">
+          <button class="form__button button" type="submit">Отправить заявку</button>
 
-        <p class="form__required-text">* — Обязательные поля</p>
+          <p class="form__required-text">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
 
