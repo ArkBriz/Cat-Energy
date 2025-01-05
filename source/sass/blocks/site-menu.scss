@@ -16,6 +16,21 @@
     position: absolute;
     width: 100%;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 75%;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 580px;
+    background-color: transparent;
+  }
 }
 
 .page-header__nav--closed .site-menu {
@@ -30,18 +45,41 @@
 }
 
 .site-menu__item {
+  position: relative;
   padding: 22px 24px;
   border-top: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+    padding: 10px 0;
+    border-top: none;
+
+    &--current::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      background-color: $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--current::before {
+      background-color: $white;
+    }
+  }
 }
 
 .site-menu__link {
   color: $black;
 
-  &:hover {
+  &[href]:hover {
     color: rgba($black, 0.6);
   }
 
-  &:active {
+  &[href]:active {
     color: rgba($black, 0.3);
   }
 
@@ -49,11 +87,11 @@
     &--index-color {
       color: $white;
 
-      &:hover {
+      &[href]:hover {
         color: rgba($white, 0.6);
       }
 
-      &:active {
+      &[href]:active {
         color: rgba($white, 0.3);
       }
     }
