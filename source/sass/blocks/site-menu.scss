@@ -22,6 +22,13 @@
   display: none;
 }
 
+@media (max-width: $mobile-width) {
+  .page-header__nav--nojs .site-menu {
+    position: static;
+    display: block;
+  }
+}
+
 .site-menu__item {
   padding: 22px 24px;
   border-top: 1px solid $light-grey;

@@ -106,3 +106,7 @@
     transform: rotate(-45deg);
   }
 }
+
+.page-header__nav--nojs .page-header__toggle {
+  display: none;
+}
