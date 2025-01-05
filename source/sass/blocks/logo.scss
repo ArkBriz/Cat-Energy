@@ -1,3 +1,15 @@
+.logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .logo__name {
-  width: 128px;
+  justify-self: center;
+  width: 101px;
+  height: 18px;
 }

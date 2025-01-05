@@ -36,11 +36,26 @@
 
 .site-menu__link {
   color: $black;
-  text-decoration: none;
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
 
   @media (min-width: $desktop-width) {
     &--index-color {
       color: $white;
+
+      &:hover {
+        color: rgba($white, 0.6);
+      }
+
+      &:active {
+        color: rgba($white, 0.3);
+      }
     }
   }
 }
