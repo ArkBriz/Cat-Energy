@@ -1,6 +1,7 @@
 .switcher {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (max-width: $mobile-width) {
     width: 210px;
@@ -9,4 +10,108 @@
   @media (min-width: $tablet-width) {
     width: 591px;
   }
+}
+
+.switcher__button {
+  padding: 5px 5px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 0;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $black;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid rgb($black, 0.4);
+    }
+
+    &:active {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.switcher__toggler {
+  display: flex;
+  justify-content: center;
+  margin: 0 13px;
+  padding: 4px 6px;
+  flex-grow: 1;
+  background-color: $white;
+  border-radius: 6px;
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 6px;
+    background-color: $basic-green;
+    border-radius: 6px;
+  }
+
+  .switcher--before & {
+    justify-content: flex-start;
+  }
+
+  .switcher--after & {
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.switcher__bar {
+  flex-grow: 1;
+  margin: 0 43px;
+  appearance: none;
+  background-color: transparent;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.switcher__bar::-webkit-slider-runnable-track {
+  height: 8px;
+  background-color: $special-grey;
+  border-radius: 6px;
+}
+
+.switcher__bar::-webkit-slider-thumb {
+  appearance: none;
+
+  width: 34px;
+  height: 34px;
+  margin-top: -12px;
+  border: 11px solid $white;
+  border-radius: 50%;
+  background-color: $basic-green;
+
+  box-sizing: border-box;
+  box-shadow:
+    0 0 0 1px $special-grey,
+    0 1px 3px rgb($black, 0.16);
+  cursor: pointer;
+
+    &:hover {
+      box-shadow:
+      0 0 0 1px $special-grey,
+      0 2px 4px rgb($black, 0.19);
+    }
+
+    &:active {
+      box-shadow:
+      0 0 0 1px $basic-green,
+      0 3px 5px rgb($black, 0.2);
+    }
 }

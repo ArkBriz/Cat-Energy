@@ -2,6 +2,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     max-width: 1440px;
+    margin: 0 auto;
 
     &::before {
       display: block;
@@ -19,6 +20,7 @@
 }
 
 .page-header__nav {
+  position: relative;
   margin: 0 auto;
 
   @media (max-width: $mobile-width) {
@@ -47,6 +49,7 @@
 }
 
 .page-header__wrap {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 24px;
   align-items: center;

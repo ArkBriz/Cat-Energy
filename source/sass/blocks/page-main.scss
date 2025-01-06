@@ -12,6 +12,31 @@
   margin: 0 auto;
 }
 
+.page-main__example {
+  padding: 25px 20px 40px;
+
+  &--bg {
+    background-color: $basic-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 33px 40px;
+
+    &--bg {
+      background-image: linear-gradient(to top, #eaeaea 40%, $white 40%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 75px;
+
+    &--bg {
+      background-image: linear-gradient(to top, #eaeaea 70%, $white 60%);
+    }
+  }
+}
+
 .page-main__footer {
   &--dark {
     background-color: $basic-gray;
