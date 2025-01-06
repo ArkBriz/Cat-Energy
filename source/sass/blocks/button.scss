@@ -9,6 +9,15 @@
   text-transform: uppercase;
   background-color: $basic-green;
 
+  &:hover,
+  &:active {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgb($white, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
