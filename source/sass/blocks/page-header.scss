@@ -2,6 +2,10 @@
   @media (min-width: $desktop-width) {
     position: relative;
     max-width: 1440px;
+<<<<<<< HEAD
+=======
+    margin: 0 auto;
+>>>>>>> draft
 
     &::before {
       display: block;
@@ -48,6 +52,7 @@
 }
 
 .page-header__wrap {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 24px;
   align-items: center;
