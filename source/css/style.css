@@ -659,22 +659,22 @@
   }
 }
 
-@media (max-width: 767px) {
-  .process {
-    max-width: 540px;
-    padding: 0 20px 20px;
-  }
+.process {
+  max-width: 540px;
+  padding: 0 20px 49px;
 }
 @media (min-width: 768px) {
   .process {
     max-width: 945px;
     padding: 0 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 @media (min-width: 1320px) {
   .process {
     max-width: 1220px;
     padding: 0 0 47px;
+    border-bottom: none;
   }
 }
 
@@ -689,31 +689,63 @@
     display: grid;
     grid-template-columns: repeat(2, 230px);
     gap: 37px 153px;
+    max-width: 685px;
+    margin: 0 auto;
     font-size: 16px;
     line-height: 24px;
+    counter-reset: process;
   }
 }
 @media (min-width: 1320px) {
   .process__list {
     grid-template-columns: repeat(4, 230px);
     gap: 100px;
+    max-width: 100%;
+    margin: 0;
   }
 }
 
 .process__item {
-  outline: 1px solid black;
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
 }
-@media (max-width: 767px) {
-  .process__item {
-    margin-bottom: 20px;
-    padding-left: 80px;
-  }
+.process__item:last-child {
+  margin-bottom: 0;
+}
+.process__item--leaf {
+  background-image: url("../img/decorative/leaf.svg");
+}
+.process__item--powder {
+  background-image: url("../img/decorative/glass.svg");
+}
+.process__item--meal {
+  background-image: url("../img/decorative/cutlery.svg");
+}
+.process__item--weight {
+  background-image: url("../img/decorative/scales.svg");
 }
 @media (min-width: 768px) {
   .process__item {
+    position: relative;
     width: 230px;
     margin-bottom: 0;
     padding: 111px 0 57px;
+    background-size: 80px 80px;
+    counter-increment: process;
+  }
+  .process__item::before {
+    content: counter(process);
+    position: absolute;
+    top: -40px;
+    right: 0;
+    z-index: -1;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 1;
+    color: #f2f2f2;
   }
 }
 
