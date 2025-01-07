@@ -7,8 +7,28 @@
   font-size: 16px;
   line-height: 18px;
 
+  &:hover svg {
+    fill: $basic-green;
+  }
+
+  &:active svg {
+    fill: rgb($basic-green, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 163px;
-    margin-top: 0;
   }
+}
+
+.copyright__name {
+  color: $special-dark-gray;
+
+  &:active {
+    color: rgb($special-dark-gray, 0.3);
+  }
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
 }
