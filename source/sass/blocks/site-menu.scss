@@ -16,25 +16,6 @@
     position: absolute;
     width: 100%;
   }
-<<<<<<< HEAD
-=======
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 75%;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 580px;
-    background-color: transparent;
-  }
-}
->>>>>>> draft
 
   @media (min-width: $tablet-width) {
     display: flex;
