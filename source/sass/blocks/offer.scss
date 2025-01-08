@@ -1,5 +1,7 @@
 .offer {
-  padding: 187px 61px 43px 58px;
+  display: grid;
+  padding: 59px 61px 43px 58px;
+  align-content: space-between;
 
   font-size: 16px;
   line-height: 20px;
@@ -8,26 +10,34 @@
   background-color: $basic-green;
   background-image: url("../img/background/offer-bg-mobile.jpg");
 
-  @media (min-width: $tablet-width) {
-    padding: 70px 0;
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url("../img/decorative/gift.svg");
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-template-columns: 80px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 124px 69px 77px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 56px 43px 42px 41px;
   }
 }
 
 .offer__text {
   width: 161px;
   margin: 0 auto;
+  margin-top: 48px;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-    margin-right: 124px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 184px 42px 42px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-top: 0;
+    text-align: left;
   }
 }
