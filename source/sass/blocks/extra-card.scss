@@ -1,14 +1,18 @@
 .extra-card {
+  border-top: 1px solid $special-grey-2;
+  border-bottom: 1px solid $special-grey-2;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 225px;
 
-    border: 1px solid #cdcdcd;
+    border: 1px solid $special-grey-2;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto 288px 244px;
+    grid-template-columns: 1fr 288px 244px;
     align-items: center;
+    gap: 38px;
     border-left: none;
     border-right: none;
   }
@@ -39,6 +43,8 @@
 }
 
 .extra-card__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 15px;
 
@@ -50,7 +56,7 @@
 .extra-card__definition {
   margin: 0;
   line-height: 1;
-  color: $special-dark-gray;
+  color: $special-dark-grey;
 }
 
 .extra-card__button {

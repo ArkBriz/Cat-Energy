@@ -1,4 +1,8 @@
 .page-header {
+  @media (max-width: $mobile-width) {
+    border-bottom: 1px solid $special-border-grey;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
     max-width: 1440px;
@@ -15,6 +19,14 @@
       background-color: #7ec157;
       background-image: url("../img/background/promo-bg-desktop.jpg");
       content: "";
+    }
+  }
+
+  &--no-bg {
+    @media (min-width: $desktop-width) {
+      &::before {
+        display: none;
+      }
     }
   }
 }
@@ -37,14 +49,6 @@
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     padding: 53px 0 29px;
-  }
-
-  &--no-bg {
-    @media (min-width: $desktop-width) {
-      &::before {
-        display: none;
-      }
-    }
   }
 }
 

@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: $basic-gray;
+  background-color: $basic-grey;
 }
 
 .page-footer__wrap {
@@ -31,8 +31,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $special-border-grey;
+  border-bottom: 1px solid $special-border-grey;
 
   @media (min-width: $tablet-width) {
     max-width: 330px;
