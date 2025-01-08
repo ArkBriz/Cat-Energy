@@ -1,7 +1,7 @@
 .catalog-block {
   margin: 0 auto;
   padding: 30px 22px 18px;
-  background-color: $basic-gray;
+  background-color: $basic-grey;
 
   &--slim {
     background-image: url("../img/decorative/weight-loss.svg");
@@ -84,7 +84,7 @@
   padding-bottom: 23px;
 
   @media (max-width: $mobile-width) {
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid $special-border-grey;
   }
 
   @media (min-width: $tablet-width) {

@@ -16,7 +16,7 @@
   padding: 25px 20px 40px;
 
   &--bg {
-    background-color: $basic-gray;
+    background-color: $basic-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -39,23 +39,28 @@
 
 .page-main__footer {
   &--dark {
-    background-color: $basic-gray;
+    background-color: $basic-grey;
   }
 }
 
 .page-main__title {
-  margin: 27px 20px 41px;
+  max-width: 280px;
+  margin: 27px auto 41px;
 
   font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
 
-
   @media (min-width: $tablet-width) {
-    margin: 65px 30px 155px;
+    max-width: 708px;
+    margin: 65px auto 82px;
     font-size: 60px;
     line-height: 1;
+  }
+
+  @media (min-width: 1152px) {
+    max-width: 1092px;
   }
 }
 

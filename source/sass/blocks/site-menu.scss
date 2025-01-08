@@ -17,6 +17,7 @@
     width: 100%;
   }
 
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
@@ -54,7 +55,8 @@
     padding: 10px 0;
     border-top: none;
 
-    &--current::before {
+    &--current::before,
+    &--current-no-bg::before {
       content: "";
       position: absolute;
       right: 0;

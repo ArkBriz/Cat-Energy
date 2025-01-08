@@ -9,7 +9,7 @@
     align-items: center;
     min-width: 324px;
     padding: 0 37px 39px 39px;
-    border: 2px solid $basic-gray;
+    border: 2px solid $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,8 +18,7 @@
 }
 
 .show-all__name {
-  margin: 0;
-  margin-bottom: 8px;
+  margin: 53px 0 8px;
 
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
@@ -28,10 +27,13 @@
   color: #111111;
   text-transform: uppercase;
 
+  @media (min-width: 660px) {
+    margin-top: 63px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 134px;
-    margin-top: 161px;
-    margin-bottom: 23px;
+    margin: 161px 0 23px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -43,7 +45,7 @@
 
   font-size: 12px;
   line-height: 16px;
-  color: $special-dark-gray;
+  color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
     width: 167px;
@@ -57,8 +59,8 @@
   padding: 10px;
   font-size: 16px;
   line-height: 20px;
-  color: $special-dark-gray;
-  background-color: $basic-gray;
+  color: $special-dark-grey;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     width: 100%;

@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 225px;
 
-    border: 1px solid #cdcdcd;
+    border: 1px solid $special-grey-2;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +50,7 @@
 .extra-card__definition {
   margin: 0;
   line-height: 1;
-  color: $special-dark-gray;
+  color: $special-dark-grey;
 }
 
 .extra-card__button {
