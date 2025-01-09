@@ -24,6 +24,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(auto-fit, 245px);
     gap: 63px 80px;
+    width: 1280px;
   }
 }
 

@@ -6,6 +6,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $special-dark-grey;
+  cursor: pointer;
 
   .control &::before {
     content: "";
@@ -22,6 +23,14 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+  }
+
+  &:hover::before {
+    border-color: $special-grey-4;
+  }
+
+  &:active::before {
+    opacity: 0.6;
   }
 
   input[type="radio"]:checked ~ &::after {
@@ -45,6 +54,19 @@
     width: 18px;
     height: 14px;
     background-image: url("../img/decorative/check.svg");
+  }
+
+  input:focus ~ &::before {
+    border-color: $special-dark-grey-2;
+  }
+
+  input[disabled] ~ & {
+    color: rgb($special-dark-grey-2, 0.3);
+    cursor: auto;
+
+    &:hover::before {
+      border-color: $special-grey-2;
+    }
   }
 
   @media (min-width: $tablet-width) {

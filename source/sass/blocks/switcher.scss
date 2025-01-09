@@ -137,7 +137,12 @@
   }
 }
 
-.switcher__bar::-webkit-slider-runnable-track,
+.switcher__bar::-webkit-slider-runnable-track {
+  height: 8px;
+  background-color: $special-grey;
+  border-radius: 6px;
+}
+
 .switcher__bar::-moz-range-track {
   height: 8px;
   background-color: $special-grey;

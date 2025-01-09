@@ -1117,7 +1117,12 @@
   box-shadow: 0 0 0 1px #68B738, 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.switcher__bar::-webkit-slider-runnable-track,
+.switcher__bar::-webkit-slider-runnable-track {
+  height: 8px;
+  background-color: #dcdcdc;
+  border-radius: 6px;
+}
+
 .switcher__bar::-moz-range-track {
   height: 8px;
   background-color: #dcdcdc;
@@ -1233,6 +1238,7 @@
   .products__list {
     grid-template-columns: repeat(auto-fit, 245px);
     gap: 63px 80px;
+    width: 1280px;
   }
 }
 
@@ -1946,6 +1952,7 @@
 }
 
 .field__label,
+.field__input,
 .field__input::placeholder {
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
@@ -1955,6 +1962,7 @@
 }
 @media (min-width: 768px) {
   .field__label,
+.field__input,
 .field__input::placeholder {
     font-size: 20px;
     line-height: 1;
@@ -1963,11 +1971,22 @@
 
 .field__input {
   width: 100%;
-  padding: 13px 14px;
+  padding: 10px 14px;
   border: 1px solid #e7e7e7;
+  cursor: pointer;
 }
 .form__group--owner-contacts .field__input {
   padding-right: 40px;
+}
+.field__input:hover {
+  border-color: #cdcdcd;
+}
+.field__input:active, .field__input:focus {
+  border-color: #444444;
+}
+.field__input:focus + svg {
+  stroke: #68B738;
+  fill: #68B738;
 }
 
 .control__label {
@@ -1977,6 +1996,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #444444;
+  cursor: pointer;
 }
 .control .control__label::before {
   content: "";
@@ -1992,6 +2012,12 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+.control__label:hover::before {
+  border-color: #bababa;
+}
+.control__label:active::before {
+  opacity: 0.6;
 }
 input[type=radio]:checked ~ .control__label::after {
   content: "";
@@ -2013,6 +2039,16 @@ input[type=checkbox]:checked ~ .control__label::after {
   width: 18px;
   height: 14px;
   background-image: url("../img/decorative/check.svg");
+}
+input:focus ~ .control__label::before {
+  border-color: #222222;
+}
+input[disabled] ~ .control__label {
+  color: rgba(34, 34, 34, 0.3);
+  cursor: auto;
+}
+input[disabled] ~ .control__label:hover::before {
+  border-color: #cdcdcd;
 }
 @media (min-width: 768px) {
   .control__label {
