@@ -1,11 +1,73 @@
 .control__label {
+  position: relative;
+  padding-left: 45px;
+
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: $special-dark-grey;
 
+  .control &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    border: 1px solid $special-grey-2;
+  }
+
+  .control--radio &::before {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  input[type="radio"]:checked ~ &::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $basic-green;
+  }
+
+  input[type="checkbox"]:checked ~ &::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/decorative/check.svg");
+  }
+
   @media (min-width: $tablet-width) {
+    padding-left: 60px;
     font-size: 20px;
     line-height: 1;
+
+    .control &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    input[type="radio"]:checked ~ &::after {
+      left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+
+    input[type="checkbox"]:checked ~ &::after {
+      left: 8px;
+      width: 24px;
+      height: 18px;
+      background-size: 24px 18px;
+    }
   }
 }

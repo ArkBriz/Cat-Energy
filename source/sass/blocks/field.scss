@@ -1,8 +1,14 @@
 .field {
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   column-gap: 13px;
+
+  & svg {
+    position: absolute;
+    right: 15px;
+  }
 }
 
 .field__label,
@@ -22,4 +28,9 @@
 .field__input {
   width: 100%;
   padding: 13px 14px;
+  border: 1px solid $light-grey;
+
+  .form__group--owner-contacts & {
+    padding-right: 40px;
+  }
 }
