@@ -1,27 +1,11 @@
 .extra-products {
-  position: relative;
   max-width: 500px;
   padding: 25px 20px 35px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 41px;
-    height: 2px;
-    background-color: $basic-green;
-    z-index: -1;
-  }
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
     max-width: 950px;
     padding: 68px 30px 76px;
-
-    &::before {
-      top: 88px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -30,34 +14,56 @@
 }
 
 .extra-products__title {
-  position: relative;
-  left: -20px;
-  width: 268px;
   margin: 0;
   margin-bottom: 36px;
-  padding-left: 20px;
-  padding-right: 22px;
 
   font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
-  background-color: $white;
+
+  & span {
+    position: relative;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 22px;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 14px;
+    height: 2px;
+    background-color: $basic-green;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 413px;
-    left: 0;
     margin-bottom: 80px;
-    padding-left: 37px;
-    padding-right: 36px;
     font-size: 36px;
     line-height: 1;
+
+    & span {
+      margin-left: 0;
+      padding-left: 37px;
+      padding-right: 36px;
+    }
+
+    &::before {
+      margin-top: 22px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 40px;
-    padding-right: 35px;
-  }
+    & span {
+      margin-left: -40px;
+      padding-left: 40px;
+      padding-right: 35px;
+    }
+    }
 }
 
 .extra-products__wrap {
