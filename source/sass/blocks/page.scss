@@ -11,6 +11,12 @@
   background-color: $white;
 }
 
+.page__header {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}
+
 .page__footer {
   padding: 39px 20px 22px;
 
