@@ -178,6 +178,24 @@
   }
 }
 
+.logo__image {
+  display: block;
+  width: 33px;
+  height: 38px;
+}
+@media (min-width: 768px) {
+  .logo__image {
+    width: 60px;
+    height: 50px;
+  }
+}
+@media (min-width: 1320px) {
+  .logo__image {
+    width: 70px;
+    height: 60px;
+  }
+}
+
 .logo__name {
   justify-self: center;
   width: 101px;
