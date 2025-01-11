@@ -8,7 +8,13 @@
   color: $white;
 
   background-color: $basic-green;
-  background-image: url("../img/background/offer-bg-mobile.jpg");
+  background-image: url("../img/background/offer-bg-small.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/offer-bg-small@2x.jpg");
+  }
 
   &::before {
     content: "";
@@ -23,6 +29,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 57px 124px 69px 77px;
+
+    background-image: url("../img/background/offer-bg-large.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/offer-bg-large@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {

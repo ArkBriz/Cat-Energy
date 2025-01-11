@@ -13,6 +13,11 @@
   background-repeat: repeat-x;
   background-position: top center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/promo-bg-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 62px 117px 0;
     color: $black;

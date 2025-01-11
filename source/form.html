@@ -11,7 +11,11 @@
     <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
       <div class="page-header__wrap">
         <a class="page-header__logo logo" href="index.html">
-          <img class="logo__image" src="img/logo-light.svg" width="33.32" height="37.61" alt="Логотип сайта Cat Energy.">
+          <picture>
+            <source media="(min-width: 1320px)" srcset="img/logo-image-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg">
+            <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy.">
+          </picture>
           <img class="logo__name" src="img/logo-word.svg" width="101" height="18" alt="" aria-hidden="true">
         </a>
 
@@ -214,7 +218,6 @@
       </div>
 
       <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad224644410c55b2ed14431db75f96f5f9b20f7bae6f613c488ede772f53925b8&amp;source=constructor"></iframe>
-    </footer>
     </footer>
   </main>
 
