@@ -1,8 +1,12 @@
 .product-card {
-  @media (max-width: $mobile-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 140px);
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+
+  picture {
+    grid-row: 1 / 3;
+    order: -1;
   }
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -54,11 +58,14 @@
 }
 
 .product-card__img {
-  grid-row: 1 / 3;
-  order: -1;
-
   @media (min-width: $tablet-width) {
-    height: 101px;
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: 196px;
   }
 }
 
