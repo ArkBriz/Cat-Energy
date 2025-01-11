@@ -60,7 +60,11 @@
     <header class="page-main__header promo">
       <h1 class="promo__heading">Функциональное<br> питание для котов</h1>
       <p class="promo__text">Занялся собой? Займись котом!</p>
-      <img class="promo__img" src="img/can-promo-mobile.png" width="280" height="270" alt="Банка корма Кэт Энерджи Про со вкусом курицы.">
+      <picture>
+        <source media="(min-width: 1320px)" srcset="img/can-promo-desktop.png 1x, img/can-promo-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/can-promo-tablet.png 1x, img/can-promo-tablet@2x.png 2x">
+        <img class="promo__img" srcset="img/can-promo-mobile.png, img/can-promo-mobile@2x.png 2x" width="280" height="270" alt="Банка корма Кэт Энерджи Про со вкусом курицы.">
+      </picture>
       <a class="promo__button button" href="#">Подобрать программу</a>
     </header>
 
@@ -126,8 +130,15 @@
         </div>
 
         <div class="example__images">
-          <img class="example-img" src="img/cat-fat.png" width="280" height="232" alt="Сидит толстый кот - состояние до употребления корма.">
-          <img class="example-img" src="img/cat-skinny.png" width="280" height="232" alt="Сидит стройный кот - состояние после после употребления корма.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/examples/example-cat-tablet.png 1x, img/examples/example-cat-tablet@2x.png 2x">
+            <img class="example-img example-img--skinny" srcset="img/examples/example-after-mobile.png 1x, img/examples/example-after-mobile@2x.png 2x" width="280" height="232" alt="Сидит толстый кот - состояние до употребления корма.">
+          </picture>
+
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/examples/example-cat-tablet.png 1x, img/examples/example-cat-tablet@2x.png 2x">
+            <img class="example-img example-img--fat" srcset="img/examples/example-before-mobile.png 1x, img/examples/example-before-mobile@2x.png 2x" width="280" height="232" alt="Сидит стройный кот - состояние после после употребления корма.">
+          </picture>
         </div>
 
         <div class="example__switcher switcher switcher--before">

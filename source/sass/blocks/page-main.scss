@@ -1,6 +1,6 @@
 .page-main__header {
   @media (min-width: $tablet-width) {
-    margin-bottom: 505px;
+    margin-bottom: 480px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,14 +31,14 @@
   padding: 25px 20px 40px;
 
   &--bg {
-    background-color: $basic-grey;
+    background-color: $basic-grey-3;
   }
 
   @media (min-width: $tablet-width) {
     padding: 43px 33px 40px;
 
     &--bg {
-      background-image: linear-gradient(to top, #eaeaea 40%, $white 40%);
+      background-image: linear-gradient(to top, $basic-grey-3 40%, $white 40%);
     }
   }
 
@@ -47,7 +47,7 @@
     padding-bottom: 75px;
 
     &--bg {
-      background-image: linear-gradient(to top, #eaeaea 70%, $white 60%);
+      background-image: linear-gradient(to top, $basic-grey-3 70%, $white 60%);
     }
   }
 }
