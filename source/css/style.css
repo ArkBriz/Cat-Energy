@@ -2013,7 +2013,7 @@
   align-items: center;
   column-gap: 13px;
 }
-.field svg {
+.field .field__icon {
   position: absolute;
   right: 15px;
 }
@@ -2051,7 +2051,7 @@
 .field__input:active, .field__input:focus {
   border-color: #444444;
 }
-.field__input:focus + svg {
+.field__input:focus + .field__icon {
   stroke: #68B738;
   fill: #68B738;
 }
@@ -2245,17 +2245,17 @@ input[disabled] ~ .control__label:hover::before {
   width: 28px;
   height: 20px;
 }
-.socials__link:hover svg {
+.socials__link:hover .socials__link-icon {
   fill: #68B738;
 }
-.socials__link--fb:hover svg {
+.socials__link--fb:hover .socials__link-icon {
   fill: none;
   stroke: #68B738;
 }
-.socials__link:active svg {
+.socials__link:active .socials__link-icon {
   fill: rgba(104, 183, 56, 0.3);
 }
-.socials__link--fb:active svg {
+.socials__link--fb:active .socials__link-icon {
   fill: none;
   stroke: rgba(104, 183, 56, 0.3);
 }
