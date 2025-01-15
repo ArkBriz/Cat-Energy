@@ -45,16 +45,16 @@
 }
 
 .field-group__heading {
-  display: block;
+  display: flex;
   margin-bottom: 35px;
 
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
 
   & span {
     position: relative;
-    display: block;
+    width: min-content;
     margin-left: -22px;
     padding-right: 14px;
     padding-left: 20px;

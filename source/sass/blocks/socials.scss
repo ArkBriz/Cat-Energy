@@ -40,7 +40,7 @@
   height: 20px;
 
   &:hover .socials__link-icon {
-    fill: $basic-green
+    fill: $basic-green;
   }
 
   &--fb:hover .socials__link-icon {
@@ -50,7 +50,6 @@
 
   &:active .socials__link-icon {
     fill: rgb($basic-green, 0.3);
-
   }
 
   &--fb:active .socials__link-icon {

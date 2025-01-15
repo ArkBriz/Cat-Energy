@@ -100,17 +100,17 @@
     0 1px 3px rgb($black, 0.16);
   cursor: pointer;
 
-    &:hover {
-      box-shadow:
+  &:hover {
+    box-shadow:
       0 0 0 1px $special-grey,
       0 2px 4px rgb($black, 0.19);
-    }
+  }
 
-    &:active {
-      box-shadow:
+  &:active {
+    box-shadow:
       0 0 0 1px $basic-green,
       0 3px 5px rgb($black, 0.2);
-    }
+  }
 }
 
 .switcher__bar::-moz-range-thumb {
