@@ -7,11 +7,14 @@
 }
 
 .contacts__wrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
+  column-gap: 10px;
   max-width: 540px;
   margin: 0 auto;
   padding: 26px 20px;
+
   font-size: 16px;
   line-height: 20px;
 
@@ -37,6 +40,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 300px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -50,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    align-content: space-between;
+    gap: 15px;
     font-size: 16px;
     text-align: right;
   }
@@ -72,5 +76,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    height: 100%
   }
 }

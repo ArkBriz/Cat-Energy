@@ -1,10 +1,11 @@
 .switcher {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   @media (max-width: $mobile-width) {
-    width: 210px;
+    min-width: 210px;
+    max-width: 310px;
   }
 
   @media (min-width: $tablet-width) {
@@ -13,6 +14,7 @@
 }
 
 .switcher__button {
+  max-width: 100px;
   padding: 5px 5px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -24,6 +26,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    max-width: 130px;
     padding: 4px 0;
     font-size: 20px;
     line-height: 30px;
@@ -42,7 +45,7 @@
 
 .switcher__toggler {
   display: flex;
-  justify-content: center;
+  max-width: 86px;
   margin: 0 13px;
   padding: 4px 6px;
   flex-grow: 1;

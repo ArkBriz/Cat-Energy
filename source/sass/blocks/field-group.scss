@@ -45,8 +45,7 @@
 }
 
 .field-group__heading {
-  display: flex;
-  width: min-content;
+  display: block;
   margin-bottom: 35px;
 
   font-family: Oswald, Arial, sans-serif;
@@ -55,6 +54,7 @@
 
   & span {
     position: relative;
+    display: block;
     margin-left: -22px;
     padding-right: 14px;
     padding-left: 20px;

@@ -1,5 +1,6 @@
 .control__label {
   position: relative;
+  display: block;
   padding-left: 45px;
 
   font-family: Oswald, Arial, sans-serif;
@@ -72,7 +73,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 60px;
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.1;
 
     .control &::before {
       width: 40px;

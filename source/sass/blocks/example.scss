@@ -27,6 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
     margin-top: 83px;
     margin-bottom: 69px;
   }
@@ -75,7 +76,6 @@
 }
 
 .example__item {
-  position: relative;
   text-align: center;
 }
 
@@ -87,7 +87,7 @@
 
   font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
-  line-height: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -96,11 +96,10 @@
 }
 
 .example__desc {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -16px;
-  margin: 0;
+  position: relative;
+  width: 77px;
+  margin: 0 auto;
+  margin-top: -5px;
   padding: 0 16px;
 
   font-size: 12px;
@@ -108,8 +107,7 @@
   background-color: $basic-grey-3;
 
   @media (min-width: $tablet-width) {
-    width: max-content;
-    bottom: -6px;
+    width: 117px;
     padding: 0 10px;
     font-size: 14px;
     background-color: $white;
@@ -134,13 +132,18 @@
   @media (min-width: $tablet-width) {
     display: grid;
     gap: 9px;
+    max-width: 300px;
+
     font-size: 20px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 366px;
     justify-content: space-between;
+    text-align: center;
   }
 }
 
@@ -154,7 +157,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 1 / 4;
+    grid-row: 1 / 3;
     grid-column: 2 / 3;
     margin-bottom: 0;
   }

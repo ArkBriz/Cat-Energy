@@ -16,13 +16,24 @@
 .field__input::placeholder {
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.1;
   text-transform: uppercase;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
+  }
+}
+
+.field__label {
+  min-width: auto;
+  max-width: 125px;
+  word-wrap: break-word;
+
+  @media (min-width: $tablet-width) {
+    min-width: auto;
+    max-width: 280px;
   }
 }
 
